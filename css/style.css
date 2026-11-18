@@ -1,0 +1,118 @@
+/* تنسيق الصفحة الرئيسية */
+body {
+    background-color: #f1f4f9;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* عنوان المشروع */
+h1 {
+    color: #263b5e;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* صناديق البيانات */
+.card {
+    border: none;
+    border-radius: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+/* حركة الصندوق عند مرور الماوس */
+.card:hover {
+    transform: translateY(-4px);
+}
+
+/* عناوين الأقسام */
+h3 {
+    color: #263b5e;
+    font-weight: bold;
+}
+
+/* خانات الإدخال */
+.form-control {
+    border-radius: 8px;
+    padding: 10px;
+}
+
+/* الأزرار */
+button {
+    border-radius: 8px !important;
+    padding: 10px !important;
+    font-weight: bold !important;
+}
+
+/* زر إضافة الطالب */
+.btn-primary {
+    background-color: #263b5e;
+    border: none;
+}
+
+/* زر لجنة الرأفة */
+.btn-success {
+    background-color: #23845b;
+    border: none;
+}
+
+/* بطاقات الطلاب */
+#studentsDisplay .card {
+    margin-top: 15px;
+    border-right: 5px solid #263b5e;
+}
+
+/* تقرير لجنة الرأفة */
+#finalReport .card {
+    border-right: 5px solid #23845b;
+}
+
+/* رسائل الخطأ */
+#errorMessage {
+    font-weight: bold;
+}
+
+/* تحسين العرض على الموبايل */
+@media (max-width: 576px) {
+    .container {
+        margin-top: 20px !important;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+}
+
+/* تأثير عند مرور الماوس على الأزرار */
+button:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+/* تنسيق قائمة الطلاب */
+#studentsDisplay {
+    margin-top: 15px;
+}
+
+/* تنسيق رسائل الخطأ */
+#errorMessage {
+    background-color: #fff0f0;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+/* تنسيق التقرير */
+#finalReport {
+    margin-top: 15px;
+    line-height: 1.8;
+}
+
+/* تنسيق النصوص داخل البطاقات */
+.card p {
+    margin-bottom: 10px;
+}
